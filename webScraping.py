@@ -1,7 +1,7 @@
 from ssl import SSLError
 
 import requests
-from bs4 import BeautifulSoup,SoupStrainer
+from bs4 import BeautifulSoup
 import re
 from collections import deque
 
