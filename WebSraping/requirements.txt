@@ -1,0 +1,8 @@
+ssl
+requests
+bs4
+re
+collections
+selenium
+trafilatura
+os
