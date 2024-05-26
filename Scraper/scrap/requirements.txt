@@ -1,0 +1,5 @@
+bs4
+os
+re
+trafilatura
+trafilatura
