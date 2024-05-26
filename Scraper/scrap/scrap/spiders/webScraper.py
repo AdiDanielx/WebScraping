@@ -7,10 +7,15 @@ from scrapy.linkextractors import LinkExtractor
 
 class WebScraper(CrawlSpider):
 
-
-    name ='adi'
-    start_urls = ['https://www.kolzchut.org.il/']
-    allowed_domains = ['kolzchut.org.il']
+    @staticmethod
+    def get_domain(url):
+        pattern = r'^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)'
+        domain = re.match(pattern, url)
+        return domain.group(0)
+        
+    name ='Webscraping'
+    start_urls = ['']
+    allowed_domains = ['']
     rules = [Rule (LinkExtractor(allow=(allowed_domains[0])), callback='parse_item', follow=True)]
 
     def parse_item(self, response):
