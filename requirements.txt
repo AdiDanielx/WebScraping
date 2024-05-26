@@ -1,0 +1,11 @@
+ssl
+requests
+bs4
+re
+collections
+selenium
+selenium.webdriver.chrome.service 
+selenium.webdriver.chrome.options
+trafilatura
+os
+yaml 
