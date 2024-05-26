@@ -71,6 +71,6 @@ class WebScraping():
             for link in ListallPages:
                 self.page(link)
 
-yaml_path = 'C:\\Users\\adida\OneDrive - post.bgu.ac.il\\WebSraping\\requests.yaml'
+yaml_path = '' #add here
 a = WebScraping(yaml)
 B  = a.scrap_all()
